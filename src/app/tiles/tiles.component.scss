@@ -1,0 +1,301 @@
+$primary: hsl(231, 28%, 23%);
+$secondary: hsl(188, 100%, 80%);
+
+.row {
+  margin: 0;
+}
+
+@mixin tile() {
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  color: white;
+  -webkit-transition: background-color 400ms linear;
+  -ms-transition: background-color 400ms linear;
+  transition: background-color 400ms linear;
+  overflow: hidden;
+}
+
+@mixin icon() {
+  width: 160px;
+  height: 160px;
+
+  margin: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+@mixin header() {
+  animation-name: getIn;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1rem;
+  width: 60%;
+}
+
+@mixin description() {
+  font-size: 1.4vw;
+  width: 60%;
+}
+
+.tile1 {
+  @include tile();
+
+  background-color: #63bbc2;
+  &:hover {
+    background-color: #52aab1;
+    cursor: pointer;
+  }
+
+  header {
+    @include header();
+  }
+
+  .iconHtml {
+    @include icon();
+    margin: 0;
+    width: 180px;
+    height: 180px;
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+.tile2 {
+  @include tile();
+  background-color: #756fa1;
+  &:hover {
+    background-color: #645ea0;
+    cursor: pointer;
+  }
+
+  .iconNode {
+    @include icon();
+    margin: 0 3rem;
+  }
+
+  header {
+    @include header();
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+.tile3 {
+  @include tile();
+  background-color: hsl(5, 40%, 62%);
+  &:hover {
+    background-color: hsl(5, 34%, 58%);
+    cursor: pointer;
+  }
+
+  .projectButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: white;
+      border: 2px solid white;
+      padding: 0.7rem 1.8rem;
+      font-size: 1.8vw;
+      font-weight: 500;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: hsl(5, 34%, 55%);
+        color: $secondary;
+        border: 2px solid $secondary;
+      }
+      // font-size:
+    }
+  }
+
+  .iconProjects {
+    @include icon();
+  }
+
+  header {
+    @include header();
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+.noDisplay {
+  display: none;
+}
+
+// Accordion
+
+.accordion,
+.accordion-item {
+  background-color: rgb(201, 135, 129, 0.5);
+  backdrop-filter: blur(0.5rem);
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.btn-project {
+  background-color: hsl(6, 34%, 65%);
+  backdrop-filter: blur(0.5rem);
+  color: white;
+  // border: 0.5px solid white;
+}
+
+// Eo Accordion
+
+.tile4 {
+  @include tile();
+  background-color: hsl(28, 48%, 68%);
+  &:hover {
+    background-color: #c4aa75;
+    cursor: pointer;
+  }
+  .projectButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    a {
+      width:60%;
+      text-decoration: none;
+
+      color: white;
+      border: 2px solid white;
+      padding: 0.6rem 1.8rem;
+      font-size: 1.8vw;
+      font-weight: 500;
+      letter-spacing: 2px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+
+      &:hover {
+        background-color:  hsl(40, 40%, 57%);
+        color: $secondary;
+        border: 2px solid $secondary;
+      }
+      // font-size:
+    }
+  }
+
+  header {
+    @include header();
+  }
+
+  .iconGit {
+    @include icon();
+    margin-left: 1.5rem;
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+.tile5 {
+  @include tile();
+  background-color: #788cb9;
+  &:hover {
+    background-color: #677ab8;
+    cursor: pointer;
+  }
+
+  .projectButton {
+    padding-left: 1rem;
+
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    p {
+      font-size: 1.4vw;
+      width:90%;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      border: 2px solid white;
+      padding: 0.5rem 1rem;
+      font-size: 1.5vw;
+      font-weight: 500;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: hsl(226, 36%, 53%);
+        color: $secondary;
+        border: 2px solid $secondary;
+      }
+      // font-size:
+    }
+  }
+
+  header {
+    @include header();
+  }
+
+  .iconMe {
+    @include icon();
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+.tile6 {
+  @include tile();
+  background-color: hsl(152, 24%, 54%);
+  &:hover {
+    background-color: #63aa81;
+    cursor: pointer;
+  }
+
+  header {
+    @include header();
+  }
+
+  .icon-progres {
+    @include icon();
+  }
+
+  .description {
+    @include description();
+  }
+}
+
+@keyframes getIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .tile {
+    width: 100%;
+  }
+}

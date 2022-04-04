@@ -1,0 +1,24 @@
+<div class="zenon">
+  <section class="name">
+    {{ project.name }}
+  </section>
+  <section class="info">
+    <section class="details">
+      <section class="keys">
+        <p *ngFor="let key of keys">{{ key }} </p>
+      </section>
+
+      <section class="values">
+        <p *ngFor="let value of values">{{ value }}</p>
+      </section>
+    </section>
+    <section class="goToApp">
+      <button class="btn btn-prmiary">
+        Go to app 
+      </button>
+    </section>
+  </section>
+  <section class="description">
+    <p>{{ project.description }}</p>
+  </section>
+</div>

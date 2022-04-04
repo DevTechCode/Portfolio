@@ -1,0 +1,105 @@
+$fw: 1vw;
+$primary: hsl(247, 21%, 50%);
+
+.zenon {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  background-color: hsl(231, 28%, 28%);
+  color: white;
+  border-radius: 5px;
+
+  .name {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2 * $fw;
+    font-weight: 500;
+    background-color: $primary;
+    border-radius: 5px;
+  }
+
+  .description {
+    background-color: $primary;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    border-radius: 5px;
+    padding: 1.5rem;
+    font-size: 1.1 * $fw;
+  }
+
+  .info {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .goToApp {
+      height: 50%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2 * $fw;
+        width: 50%;
+        height: 50%;
+        font-weight: 500;
+        border: white solid 1px;
+
+        &:hover {
+          color: white;
+          border: white solid 2px;
+          background-color: hsl(247, 21%, 40%);
+        }
+        background-color: $primary;
+        color: white;
+        // border: 2px solid white;
+      }
+    }
+
+    .details {
+      
+      height: 90%;
+      width: 50%;
+      display: flex;
+      justify-content: start;
+      gap: 1.5rem;
+      background-color: $primary;
+      padding: 1rem;
+      border-radius: 5px;
+      // overflow:scroll;
+      // flex-direction: column;
+
+      .keys,
+      .values {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+          width: 100%;
+          font-size: 1 * $fw;
+          // font-weight: 500;
+        }
+        // align-items: start;
+        // justify-content: space-evenly;
+      }
+    }
+  }
+}

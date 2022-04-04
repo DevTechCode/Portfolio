@@ -1,0 +1,108 @@
+#banner {
+  width: 100%;
+  height: 18rem;
+  background-color: #33395b;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (10% [col-start])[10];
+      grid-template-columns: repeat(10, 10% [col-start]);
+  -ms-grid-rows: (10% [col-start])[10];
+      grid-template-rows: repeat(10, 10% [col-start]);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#banner > * {
+  -webkit-animation-name: getIn;
+          animation-name: getIn;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2.0s;
+          animation-duration: 2.0s;
+}
+
+.inner {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 9;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 3;
+  font-size: 2rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.innerHr {
+  background-color: white;
+  width: 80%;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 10;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 5;
+  height: 0.02rem;
+}
+
+#banner .content {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 7;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 8;
+  place-self: center stretch;
+}
+
+#banner .content2 {
+  -ms-grid-column: 8;
+      grid-column-start: 8;
+  grid-column-end: 10;
+  -ms-grid-row: 7;
+      grid-row-start: 7;
+  grid-row-end: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  white-space: nowrap;
+  border: solid white;
+  padding: 0.5rem;
+  place-self: center;
+}
+
+@-webkit-keyframes getIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes getIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=banner.component.css.map */

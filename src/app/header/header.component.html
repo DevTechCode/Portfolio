@@ -1,0 +1,60 @@
+
+<header
+  class="primary-header flex"
+  (scroll)="onScroll()"
+  [ngClass]="navbarfixed ? 'fixed' : 'nofixed'"
+>
+  <nav class="navbar">
+    <div class="logo " (click)="onLogoClick()">
+      <mat-icon [ngClass]="navbarfixed ? 'arrow' : 'none'"
+        >arrow_upward</mat-icon
+      >{{ techCode }}
+    </div>
+
+    <span class="glyphicon glyphicon-upload"></span>
+
+    <ul
+      id="primary navigation"
+      class="primary-navigation"
+      [ngClass]="{ open: zmienna == true }"
+    >
+      <li>
+        <a routerLink="/" class="active"> Home </a>
+      </li>
+      <li>
+        <a [routerLink]="['/projects']"> Projects </a>
+      </li>
+      <li>
+        <a routerLink="/aboutme"> About Me </a>
+      </li>
+      <li>
+        <a href="#contact"> Contact </a>
+      </li>
+    </ul>
+
+    <button
+      class="burger mobile-nav-toggle"
+      aria-controls="primary-navigation"
+      aria-expanded="false"
+      aria-hidden="true"
+      [ngClass]="{ noHover: zmienna == true }"
+      (click)="onBurgerClick()"
+    >
+      <span class="sr-only">Menu</span>
+      <span
+        class="rectangle rectangle--top rectangle--small burgeranimation"
+        [ngClass]="{ open: zmienna == true }"
+      ></span>
+      <span
+        class="rectangle rectangle--middle burgeranimation"
+        [ngClass]="{ open: zmienna == true }"
+      ></span>
+      <span
+        class="rectangle rectangle--bottom rectangle--small rectangle--small1 burgeranimation"
+        [ngClass]="{ open: zmienna == true }"
+      >
+      </span>
+    </button>
+  </nav>
+</header>
+

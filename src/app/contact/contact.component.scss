@@ -1,0 +1,168 @@
+#contact {
+  background-color: rgb(36, 41, 67);
+  color: white;
+}
+
+.innerContact {
+  width: 90%;
+
+  margin: auto;
+  display: flex;
+  height: 30rem;
+}
+
+.innerContact #messageMe {
+  width: 60%;
+}
+
+.fields {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.field.half {
+  padding: 2rem 0;
+  width: calc(50% - 1rem);
+}
+.field {
+  width: 100%;
+}
+
+#name,
+#email {
+  width: 90%;
+  height: 2.5em;
+}
+
+#message {
+  width: 91%;
+  height: 9rem;
+}
+
+label {
+  color: #ffffff;
+  display: block;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: rgb(42, 47, 74);
+  border: 2px solid rgb(42, 47, 74);
+  color: white;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #9bf1ff;
+}
+
+textarea {
+  border: 100px;
+  background-color: rgb(42, 47, 74);
+  color: white;
+  font-size: larger;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 2px solid #9bf1ff;
+}
+
+.actions {
+  display: flex;
+  list-style: none;
+  justify-content: start;
+  padding: 0.75rem 0;
+  gap: 2rem;
+}
+
+.primary {
+  height: 2.5rem;
+  width: 9rem;
+  color: rgb(42, 47, 74);
+  background-color: white;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.secondary {
+  height: 2.5rem;
+  width: 5.5rem;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: solid white 1px;
+}
+
+.primary,
+.secondary:hover {
+  cursor: pointer;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0 1rem 6rem;
+  border-left: rgba(42, 47, 74, 0.975) solid 2px;
+}
+
+.split h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.split a,
+span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.contact-method {
+  padding-bottom: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-method-Email {
+  margin-top: 1rem;
+}
+.contact-method-adres {
+  margin-bottom: 1rem;
+}
+.contact-method h3 {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.icon-holder {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  position: relative;
+  right: 0.4rem;
+}
+
+.icon-phone {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  right: 1rem;
+}

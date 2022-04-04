@@ -1,0 +1,180 @@
+<div class="row">
+  <div class="col-md-5 tile tile1" (click)="onTile1Click()" *ngIf="tile1switch">
+    <div class="iconHtml">
+      <img src="../../assets/tiles/html.png" alt="html icon" />
+    </div>
+
+    <header>
+      <h2>Frontend</h2>
+      <hr />
+      <h5>Html Css Sass Angular JavaScript TypeScript</h5>
+    </header>
+  </div>
+
+  <div
+    class="col-md-5 tile tile1"
+    (click)="onTile1Click()"
+    *ngIf="!tile1switch"
+  >
+    <div class="iconHtml">
+      <img src="../../assets/tiles/html.png" alt="html icon" />
+    </div>
+    <div class="description">
+      <!-- Although I am looking for a job as a junior NodeJS developer, I decided to
+      get to know at least one frontend framework.  -->
+      <p>
+        This website was built using Angular, other projects were created with:
+        HTML, CSS, JavaScript and TypeScript.
+      </p>
+    </div>
+  </div>
+
+  <!-- TILE 2 -->
+
+  <div class="col-md-7 tile tile2" (click)="onTile2Click()" *ngIf="tile2switch">
+    <div class="iconNode">
+      <img src="../../assets/tiles/node.png" alt="html icon" />
+    </div>
+    <header>
+      <h1>Backend</h1>
+      <hr />
+      <h5>MEAN (MongoDB Express.js Angular NodeJs)</h5>
+    </header>
+  </div>
+
+  <!-- Tile 2 switch -->
+
+  <div
+    class="col-md-7 tile tile2"
+    (click)="onTile2Click()"
+    *ngIf="!tile2switch"
+  >
+    <div class="iconNode">
+      <img src="../../assets/tiles/node.png" alt="html icon" />
+    </div>
+    <div class="description">
+      All available projects were built and deployed using the following
+      technologies: NodeJS, Express, MongoDb, Angular and Docker.
+    </div>
+  </div>
+</div>
+
+<!-- ROW 2 -->
+
+<div class="row">
+  <div class="col-md-7 tile tile3" (click)="onTile3Click()" *ngIf="tile3switch">
+    <div class="iconProjects">
+      <img src="../../assets/tiles/projects.png" alt="html icon" />
+    </div>
+
+    <header>
+      <h2>Projects</h2>
+      <hr />
+      <h5>There will be more of them over time :)</h5>
+    </header>
+  </div>
+
+  <div
+    class="col-md-7 tile tile3"
+    (click)="onTile3Click()"
+    *ngIf="!tile3switch"
+  >
+    <div class="iconProjects">
+      <img src="../../assets/tiles/projects.png" alt="html icon" />
+    </div>
+    <div class="projectButton">
+      <a href="/projects" (click)="stopPropagation($event)">Go to Projects</a>
+    </div>
+  </div>
+
+  <!-- TILE 4 -->
+
+  <div class="col-md-5 tile tile4" (click)="onTile4Click()" *ngIf="tile4switch">
+    <div class="iconGit">
+      <img src="../../assets/tiles/iconGit.png" alt="html icon" />
+    </div>
+    <header>
+      <h1>Source Code</h1>
+      <hr />
+      <h5>GitHub DockerHub</h5>
+    </header>
+  </div>
+
+  <!--  Tile 4 switch -->
+
+  <div
+    class="col-md-5 tile tile4"
+    (click)="onTile4Click()"
+    *ngIf="!tile4switch"
+  >
+    <div class="iconGit">
+      <img src="../../assets/tiles/iconGit.png" alt="html icon" />
+    </div>
+
+    <div class="projectButton">
+      <a href="/" (click)="stopPropagation($event)">GitHub</a>
+      <a href="/" (click)="stopPropagation($event)">DockerHub</a>
+    </div>
+  </div>
+</div>
+
+<!--  Row 3 -->
+<div class="row">
+  <div class="col-md-5 tile tile5" (click)="onTile5Click()" *ngIf="tile5switch">
+    <div class="iconMe">
+      <img src="../../assets/tiles/me.png" alt="html icon" />
+    </div>
+
+    <header>
+      <h2>About Me</h2>
+      <hr />
+      <h5>Technical skills, emploment history</h5>
+    </header>
+  </div>
+
+  <div
+    class="col-md-5 tile tile5"
+    (click)="onTile5Click()"
+    *ngIf="!tile5switch"
+  >
+    <div class="iconMe">
+      <img src="../../assets/tiles/me.png" alt="html icon" />
+    </div>
+
+    <div class="projectButton">
+      <p>Currently looking for a junior NodeJs developer position.</p>
+      <a href="/aboutme" (click)="stopPropagation($event)">More information</a>
+    </div>
+  </div>
+
+  <!-- TILE 6 -->
+
+  <div class="col-md-7 tile tile6" (click)="onTile6Click()" *ngIf="tile6switch">
+    <div class="icon-progres">
+      <img src="../../assets/tiles/progres.png" alt="html icon" />
+    </div>
+    <header>
+      <h1>Progres</h1>
+      <hr />
+      <h5>PostgreSql AWS NextJs React</h5>
+    </header>
+  </div>
+
+  <!-- Tile 6 switch -->
+
+  <div
+    class="col-md-7 tile tile6"
+    (click)="onTile6Click()"
+    *ngIf="!tile6switch"
+  >
+    <div class="icon-progres">
+      <img src="../../assets/tiles/progres.png" alt="html icon" />
+    </div>
+    <div class="description">
+      Programming is a never-ending path of development. In addition to
+      exploring knowledge by writing more applications, I plan to get to know
+      the SQL database (PostgreSql), the second NodeJs framework (Next.js) and
+      one of the cloud services (AWS).
+    </div>
+  </div>
+</div>

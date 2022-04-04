@@ -1,0 +1,198 @@
+#contact {
+  background-color: #242943;
+  color: white;
+}
+
+.innerContact {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30rem;
+}
+
+.innerContact #messageMe {
+  width: 60%;
+}
+
+.fields {
+  margin-top: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.field.half {
+  padding: 2rem 0;
+  width: calc(50% - 1rem);
+}
+
+.field {
+  width: 100%;
+}
+
+#name,
+#email {
+  width: 90%;
+  height: 2.5em;
+}
+
+#message {
+  width: 91%;
+  height: 9rem;
+}
+
+label {
+  color: #ffffff;
+  display: block;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  margin: 0 0 1em 0;
+  text-transform: uppercase;
+}
+
+input {
+  background-color: #2a2f4a;
+  border: 2px solid #2a2f4a;
+  color: white;
+}
+
+input:focus {
+  outline: none !important;
+  border: 2px solid #9bf1ff;
+}
+
+textarea {
+  border: 100px;
+  background-color: #2a2f4a;
+  color: white;
+  font-size: larger;
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 2px solid #9bf1ff;
+}
+
+.actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 0.75rem 0;
+  gap: 2rem;
+}
+
+.primary {
+  height: 2.5rem;
+  width: 9rem;
+  color: #2a2f4a;
+  background-color: white;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.secondary {
+  height: 2.5rem;
+  width: 5.5rem;
+  font-size: 0.65em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border: solid white 1px;
+}
+
+.primary,
+.secondary:hover {
+  cursor: pointer;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0 1rem 6rem;
+  border-left: rgba(42, 47, 74, 0.975) solid 2px;
+}
+
+.split h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.split a,
+span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.contact-method {
+  padding-bottom: 0.1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-method-Email {
+  margin-top: 1rem;
+}
+
+.contact-method-adres {
+  margin-bottom: 1rem;
+}
+
+.contact-method h3 {
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.icon-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  position: relative;
+  right: 0.4rem;
+}
+
+.icon-phone {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  right: 1rem;
+}
+/*# sourceMappingURL=contact.component.css.map */
