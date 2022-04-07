@@ -10,23 +10,22 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #0d6efd;
+  background-color: #33395b;
   border-radius: 5px;
-}
-
-.container h3 {
-  font-size: 2.8vw;
-  height: 60%;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.container h3 {
+  font-size: 2.5vw;
+  padding-top: 8rem;
+  width: 90%;
   color: white;
+  text-align: center;
 }
 /*# sourceMappingURL=single-project-start.component.css.map */

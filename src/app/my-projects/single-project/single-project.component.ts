@@ -26,4 +26,6 @@ export class SingleProjectComponent implements OnInit {
       this.values = Object.values(this.project.details);
     });
   }
+
+
 }

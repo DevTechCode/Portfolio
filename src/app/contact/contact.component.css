@@ -23,7 +23,7 @@
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 18px;
@@ -89,7 +89,7 @@ textarea:focus {
   list-style: none;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   padding: 0.75rem 0;
   gap: 2rem;
 }

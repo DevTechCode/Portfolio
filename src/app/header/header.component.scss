@@ -6,10 +6,8 @@ $fontwvw: 1vw;
 //Margins and padding
 $basic: 1rem;
 
-
-
 .navbar {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: $primary;
@@ -24,7 +22,6 @@ $basic: 1rem;
     &:hover {
       color: $secondary;
       cursor: pointer;
-
     }
   }
 
@@ -42,7 +39,7 @@ $basic: 1rem;
 
     // to tywalic jakby co //
 
-    background: hsl(0%, 0%, 0%, 0.5);
+    background: rergb(64, 68, 93);
 
     li {
       list-style-type: none;
@@ -66,7 +63,7 @@ $basic: 1rem;
 
   @supports (backdrop-filter: blur(0.5rem)) {
     .primary-navigation {
-      background: hsl(0%, 0%, 100%, 0.1);
+      background: rgb(64, 68, 93);
       backdrop-filter: blur(0.5rem);
     }
   }
@@ -84,7 +81,8 @@ $basic: 1rem;
       position: fixed;
       inset: 0 0 0 30%;
 
-      background: hsl(0%, 0%, 0%, 0.4);
+      background: rgb(40, 47, 67);
+      opacity: 0.8;
       backdrop-filter: blur(0.5rem);
 
       flex-direction: column;

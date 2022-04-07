@@ -18,7 +18,7 @@
 .fields {
   margin-top: 1.5rem;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   font-size: 18px;
 }
@@ -78,7 +78,7 @@ textarea:focus {
 .actions {
   display: flex;
   list-style: none;
-  justify-content: start;
+  justify-content: flex-start;
   padding: 0.75rem 0;
   gap: 2rem;
 }

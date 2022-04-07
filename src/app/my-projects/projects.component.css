@@ -1,5 +1,5 @@
 .main {
-  height: calc(100% - 168px);
+  height: calc(100% - 120px);
   width: 100vw;
   background-color: #272b45;
   display: -webkit-box;
@@ -19,7 +19,7 @@
   height: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
 }
 
 .main .container .list {

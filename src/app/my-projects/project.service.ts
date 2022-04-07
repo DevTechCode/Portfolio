@@ -7,24 +7,39 @@ export class ProjectService {
 
   private Projects: Project[] = [
     new Project(
-      'Angular',
-      'Piekna sprawa, dajmy tutaj jakis dluzszy opis zeby wiadomo bylo jak to wyglada na powaznie a nie tyko tak o po prostu bez sensu napisane :)',
-      { Framework: 'udemy', Database: 'O tak', Architecture: 'MVC', Deploymeny: 'Docker' },
-      'www.gogle.com'
-    ),
-    new Project(
-      'NodeJs',
-      'Wiadomo',
-      { Framework: 'udemy', Database: 'O tak', Architecture: 'MVC', Deploymeny: 'Docker' } ,
-      'www.gogle.com'
-    ),
-    new Project(
       'Shop',
       'Krótki opis tego co sie robi w swiecie',
-      { Framework: 'udemy', Database: 'O tak', Architecture: 'MVC', Deploymeny: 'Docker' },
-      'www.gogle.com'
-    )
-  ]
+      {
+        Framework: 'Express',
+        Database: 'MongoDB',
+        Architecture: 'MVC',
+        Deploymeny: 'Docker',
+      },
+      'http://51.83.185.173:3000/'
+    ),
+    new Project(
+      'Drag & Drop',
+      'Piekna sprawa, dajmy tutaj jakis dluzszy opis zeby wiadomo bylo jak to wyglada na powaznie a nie tyko tak o po prostu bez sensu napisane :)',
+      {
+        Language: 'TypeScript',
+        Budler: 'Webpack',
+        Database: 'None',
+        Deploymeny: 'Docker',
+      },
+      'http://51.83.185.173:8080/'
+    ),
+    new Project(
+      'Calendar',
+      'Wiadomo',
+      {
+        Framework: 'udemy',
+        Database: 'MongoDB',
+        Architecture: 'MVC',
+        Deploymeny: 'Docker',
+      },
+      'http://51.83.185.173:3030/'
+    ),
+  ];
 
   getProjects() {
     return this.Projects.slice();

@@ -1,5 +1,5 @@
 a {
-  background-color: #575d6c;
+  background-color: #33395b;
   color: white;
   width: 100%;
   display: -webkit-box;
@@ -8,5 +8,9 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.activeclass {
+  background-color: #56517b;
 }
 /*# sourceMappingURL=project-item.component.css.map */

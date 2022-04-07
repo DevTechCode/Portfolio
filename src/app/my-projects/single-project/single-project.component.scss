@@ -31,7 +31,7 @@ $primary: hsl(247, 21%, 50%);
     width: 100%;
     display: flex;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
     border-radius: 5px;
     padding: 1.5rem;
     font-size: 1.1 * $fw;
@@ -50,7 +50,8 @@ $primary: hsl(247, 21%, 50%);
       display: flex;
       align-items: center;
       justify-content: center;
-      button {
+      a {
+        text-decoration: none;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -76,7 +77,7 @@ $primary: hsl(247, 21%, 50%);
       height: 90%;
       width: 50%;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       gap: 1.5rem;
       background-color: $primary;
       padding: 1rem;

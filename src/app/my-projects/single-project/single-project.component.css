@@ -2,6 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -10,7 +13,7 @@
   width: 100%;
   margin: 0;
   padding: 1rem;
-  background-color: #575d6c;
+  background-color: #33395b;
   color: white;
   border-radius: 5px;
 }
@@ -29,12 +32,12 @@
           align-items: center;
   font-size: 2vw;
   font-weight: 500;
-  background-color: #0d6efd;
+  background-color: #6b659a;
   border-radius: 5px;
 }
 
 .zenon .description {
-  background-color: #0d6efd;
+  background-color: #6b659a;
   height: 40%;
   width: 100%;
   display: -webkit-box;
@@ -45,7 +48,7 @@
           align-items: flex-start;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   border-radius: 5px;
   padding: 1.5rem;
   font-size: 1.1vw;
@@ -66,7 +69,7 @@
 }
 
 .zenon .info .goToApp {
-  height: 20%;
+  height: 50%;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,18 +93,18 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.2vw;
-  width: 10rem;
-  height: 4rem;
+  width: 50%;
+  height: 50%;
   font-weight: 500;
-  border: white solid 2px;
-  background-color: #0d6efd;
+  border: white solid 1px;
+  background-color: #6b659a;
   color: white;
 }
 
 .zenon .info .goToApp button:hover {
   color: white;
-  border: #0d6efd solid 2px;
-  background-color: #0b4cbd;
+  border: white solid 2px;
+  background-color: #56517b;
 }
 
 .zenon .info .details {
@@ -112,9 +115,9 @@
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: start;
+          justify-content: flex-start;
   gap: 1.5rem;
-  background-color: #0d6efd;
+  background-color: #6b659a;
   padding: 1rem;
   border-radius: 5px;
 }
