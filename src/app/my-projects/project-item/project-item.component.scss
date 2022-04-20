@@ -1,11 +1,43 @@
 a {
-  background-color:  hsl(231, 28%, 28%);
+  background-color: hsl(231, 28%, 28%);
   color: white;
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .activeclass {
-  background-color:hsl(247, 21%, 40%);
+  background-color: hsl(247, 21%, 40%);
+}
+
+.name {
+  font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+}
+
+@media (max-width: 970px) {
+  .name {
+    font-size: 1rem;
+  }
+  a {
+   width:8rem
+  }
+}
+
+@media (max-width: 414px) {
+  .name {
+    font-size: 0.7rem;
+  }
+  a {
+    width: 100%;
+    // height: auto;
+    // overflow: hidden;
+    flex-wrap: nowrap;
+    div {
+      h4 {
+        width:100%
+      }
+    }
+  }
 }

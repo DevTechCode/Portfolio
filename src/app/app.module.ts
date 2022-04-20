@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
 import { SingleProjectStartComponent } from './single-project-start/single-project-start.component';
 import { RouterModule } from '@angular/router';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
     ContactComponent,
     FooterComponent,
     ProjectsComponent,
-
     ProjectItemComponent,
     CvComponent,
     HomeComponent,
@@ -44,7 +44,6 @@ import { AboutMeComponent } from './about-me/about-me.component';
     NoopAnimationsModule,
     MatSliderModule,
     MatIconModule,
- 
   ],
   providers: [],
   bootstrap: [AppComponent],

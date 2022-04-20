@@ -1,6 +1,6 @@
 $primary: hsl(231, 28%, 23%);
 $secondary: hsl(188, 100%, 80%);
-
+// * { border: 1px solid red !important; }
 .row {
   margin: 0;
 }
@@ -27,19 +27,26 @@ $secondary: hsl(188, 100%, 80%);
 }
 
 @mixin header() {
-  animation-name: getIn;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
+  // animation-name: getIn;
+  // animation-iteration-count: 1;
+  // animation-duration: 0.1s;
+  // color:red;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-left: 1rem;
   width: 60%;
+  h1 {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  }
+  h5 {
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+  }
 }
 
 @mixin description() {
-  font-size: 1.4vw;
+  font-size: calc(9px + 6 * ((100vw - 320px) / 680));
   width: 60%;
 }
 
@@ -49,7 +56,6 @@ $secondary: hsl(188, 100%, 80%);
   background-color: #63bbc2;
   &:hover {
     background-color: #52aab1;
-    cursor: pointer;
   }
 
   header {
@@ -73,7 +79,6 @@ $secondary: hsl(188, 100%, 80%);
   background-color: #756fa1;
   &:hover {
     background-color: #645ea0;
-    cursor: pointer;
   }
 
   .iconNode {
@@ -95,7 +100,6 @@ $secondary: hsl(188, 100%, 80%);
   background-color: hsl(5, 40%, 62%);
   &:hover {
     background-color: hsl(5, 34%, 58%);
-    cursor: pointer;
   }
 
   .projectButton {
@@ -139,33 +143,11 @@ $secondary: hsl(188, 100%, 80%);
   display: none;
 }
 
-// Accordion
-
-.accordion,
-.accordion-item {
-  background-color: rgb(201, 135, 129, 0.5);
-  backdrop-filter: blur(0.5rem);
-}
-
-.accordion-button::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
-}
-
-.btn-project {
-  background-color: hsl(6, 34%, 65%);
-  backdrop-filter: blur(0.5rem);
-  color: white;
-  // border: 0.5px solid white;
-}
-
-// Eo Accordion
-
 .tile4 {
   @include tile();
   background-color: hsl(28, 48%, 68%);
   &:hover {
     background-color: #c4aa75;
-    cursor: pointer;
   }
   .projectButton {
     width: 100%;
@@ -217,7 +199,6 @@ $secondary: hsl(188, 100%, 80%);
   background-color: #788cb9;
   &:hover {
     background-color: #677ab8;
-    cursor: pointer;
   }
 
   .projectButton {
@@ -269,7 +250,6 @@ $secondary: hsl(188, 100%, 80%);
   background-color: hsl(152, 24%, 54%);
   &:hover {
     background-color: #63aa81;
-    cursor: pointer;
   }
 
   header {
@@ -294,8 +274,89 @@ $secondary: hsl(188, 100%, 80%);
   }
 }
 
+@media (max-width: 1920px) {
+  .tile {
+    .description {
+      font-size: calc(11px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .tile {
+    .description {
+      font-size: calc(13px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .tile {
+    header {
+      h1 {
+        font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+      }
+      h5 {
+        font-size: calc(17px + 6 * ((100vw - 320px) / 680));
+      }
+    }
+  }
+}
 @media (max-width: 768px) {
+  @mixin description() {
+    font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+    width: 60%;
+  }
+  .tile {
+    header {
+      h1 {
+        font-size: calc(40px + 6 * ((100vw - 320px) / 680));
+      }
+      h5 {
+        font-size: calc(18px + 6 * ((100vw - 320px) / 680));
+      }
+    }
+  }
   .tile {
     width: 100%;
+    .description {
+      @include description();
+      font-size: calc(15px + 6 * ((100vw - 320px) / 680));
+    }
+    .projectButton {
+      p {
+        font-size: 1rem;
+      }
+      a {
+        font-size: 1rem;
+      }
+    }
+    .gitdocker {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .row {
+    .tile {
+      .description {
+        font-size: 0.95rem;
+        margin: 0 0 0 1rem;
+      }
+      .icon {
+        width: 100px;
+        height: 100px;
+        margin: 0 0.5rem;
+      }
+      .projectButton {
+        p {
+          font-size: 1rem;
+        }
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
   }
 }

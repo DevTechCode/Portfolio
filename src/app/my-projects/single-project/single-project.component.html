@@ -1,22 +1,26 @@
-<div class="zenon">
+<div class="main">
   <section class="name">
     {{ project.name }}
   </section>
   <section class="info">
-    <section class="details">
-      <section class="keys">
-        <p *ngFor="let key of keys">{{ key }} </p>
-      </section>
-
-      <section class="values">
-        <p *ngFor="let value of values">{{ value }}</p>
-      </section>
+    <section class="keys">
+      <p *ngFor="let key of keys">{{ key }}</p>
     </section>
-    <section class="goToApp">
-      <a href= "{{ project.link }}"> Go to App </a>
+
+    <section class="values">
+      <p *ngFor="let value of values">{{ value }}</p>
     </section>
   </section>
+
   <section class="description">
     <p>{{ project.description }}</p>
+    <p>For more functionality click the red "i" icon visible on the main app page!</p>
+  </section>
+
+  <section class="goToApp">
+    <a id="gotoappbutton" target="blank" href="{{ project.link }}"> Go to App </a>
+    <a id="git" target="blank" href="{{ project.gitlink }}"
+      ><img  src="../../assets/tiles/iconGit.png" alt="iconGit"
+    /></a>
   </section>
 </div>

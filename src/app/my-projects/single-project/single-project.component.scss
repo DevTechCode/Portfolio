@@ -1,10 +1,12 @@
 $fw: 1vw;
 $primary: hsl(247, 21%, 50%);
+$font: calc(16px + 6 * ((100vw - 320px) / 680));
 
-.zenon {
+.main {
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  align-items: center;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -14,92 +16,202 @@ $primary: hsl(247, 21%, 50%);
   border-radius: 5px;
 
   .name {
-    height: 15%;
-    width: 100%;
+    height: 10%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2 * $fw;
+    font-size: calc(31px + 6 * ((100vw - 320px) / 680));
     font-weight: 500;
-    background-color: $primary;
+    background-color: hsl(247, 21%, 40%);
     border-radius: 5px;
+    overflow: hidden;
   }
 
   .description {
-    background-color: $primary;
-    height: 40%;
-    width: 100%;
+    background-color: hsl(247, 21%, 40%);
+    height: 35%;
+    width: 80%;
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 5px;
     padding: 1.5rem;
-    font-size: 1.1 * $fw;
+    font-size: calc(10px + 6 * ((100vw - 320px) / 680));
+    overflow: hidden;
+    p {
+      width: 94%;
+    }
   }
 
-  .info {
-    height: 40%;
-    width: 100%;
+  .goToApp {
+    height: 10%;
+    width: 80%;
     display: flex;
-    justify-content: center;
     align-items: center;
-
-    .goToApp {
-      height: 50%;
-      width: 50%;
+    justify-content: flex-end;
+    #git {
+      height: 100%;
+      width: 25%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      a {
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.2 * $fw;
-        width: 50%;
-        height: 50%;
-        font-weight: 500;
-        border: white solid 1px;
+      justify-content: flex-end;
+      cursor: default;
 
+      img {
+        height: 100%;
+        width: auto;
         &:hover {
-          color: white;
-          border: white solid 2px;
-          background-color: hsl(247, 21%, 40%);
+          cursor: pointer;
         }
-        background-color: $primary;
-        color: white;
-        // border: 2px solid white;
       }
     }
 
-    .details {
-      
-      height: 90%;
-      width: 50%;
+    #gotoappbutton {
+      text-align: center;
+      text-decoration: none;
       display: flex;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      background-color: $primary;
-      padding: 1rem;
+      justify-content: center;
+      align-items: center;
+      font-size: calc(13px + 6 * ((100vw - 320px) / 680));
+      width: 50%;
+      height: 100%;
+      font-weight: 500;
+      border: white solid 1px;
       border-radius: 5px;
-      // overflow:scroll;
-      // flex-direction: column;
+      background-color: hsl(247, 21%, 40%);
+      color: white;
+      overflow: hidden;
+      &:hover {
+        color: white;
+        border: white solid 2px;
+        background-color: $primary;
+      }
+    }
+  }
 
+  .info {
+    height: 35%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
+    .keys,
+    .values {
+      height: 100%;
+      width: 49.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      background-color: hsl(247, 21%, 40%);
+      border-radius: 5px;
+
+      p {
+        width: 100%;
+        font-size: calc(13px + 6 * ((100vw - 320px) / 680));
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .main {
+    .name {
+      font-size: calc(31px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .info {
       .keys,
       .values {
-        height: 100%;
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
         p {
-          width: 100%;
-          font-size: 1 * $fw;
-          // font-weight: 500;
+          font-size: calc(13px + 6 * ((100vw - 320px) / 680));
         }
-        // align-items: start;
-        // justify-content: space-evenly;
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .main {
+    .name {
+      font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .description {
+      font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    }
+    .info {
+      .keys,
+      .values {
+        p {
+          font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    .name {
+      font-size: calc(25px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .description {
+      font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    }
+    .info {
+      .keys,
+      .values {
+        p {
+          font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    .name {
+      font-size: calc(26px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .description {
+      font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+    }
+    .info {
+      .keys,
+      .values {
+        p {
+          font-size: calc(12px + 6 * ((100vw - 320px) / 680));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .main {
+    .name {
+      font-size: calc(30px + 6 * ((100vw - 320px) / 680));
+    }
+
+    .description {
+      font-size: calc(15px + 6 * ((100vw - 320px) / 680));
+    }
+    .info {
+      .keys,
+      .values {
+        p {
+          font-size: calc(15px + 6 * ((100vw - 320px) / 680));
+        }
       }
     }
   }

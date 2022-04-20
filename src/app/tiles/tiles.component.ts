@@ -20,6 +20,7 @@ export class TilesComponent implements OnInit {
   onTile1Click() {
     this.tile1switch = !this.tile1switch;
   }
+  
   onTile2Click() {
     this.tile2switch = !this.tile2switch;
   }

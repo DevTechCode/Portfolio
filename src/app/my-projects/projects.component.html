@@ -1,17 +1,20 @@
 <app-header></app-header>
 
 <div class="main">
-  <div class="container">
-    <div class="list">
-      <app-project-item
-        *ngFor="let projectEl of Projects; let i = index"
-        [project]="projectEl"
-        [index]="i"
-      ></app-project-item>
+  <div class="container-fluid">
+    <div class="lists">
+      <div class="list">
+        <app-project-item
+          *ngFor="let projectEl of Projects; let i = index"
+          [project]="projectEl"
+          [index]="i"
+        ></app-project-item>
+      </div>
     </div>
-
-    <div class="details">
-      <router-outlet></router-outlet>
+    <div class="detail">
+      <div class="details">
+        <router-outlet></router-outlet>
+      </div>
     </div>
   </div>
 </div>

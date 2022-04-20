@@ -106,7 +106,6 @@ $fontwvw: 1.4vw;
               text-decoration: none;
               border-bottom: 1px white solid;
 
-             
               &:hover {
                 color: $secondary;
                 border-bottom: 1px $secondary solid;
@@ -354,76 +353,126 @@ $fontwvw: 1.4vw;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 770px) {
   .main {
-    height: 100rem;
-    width: 100%;
-    // margin: 0;
-    // padding: 0;
-    // overflow: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     .cv {
-      width: 100%;
-      margin: auto;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
       .section1 {
-        border-radius: 0;
-        width: 100%;
-
         .header {
           .p1 {
-            font-size: 2.2 * $fontwvw;
-            border-bottom: none;
+            font-size: 2.9 * $fontwvw;
           }
         }
         .items {
           .item {
-            width: 50%;
-
+            width: 70%;
             .p1 {
-              font-size: 1.4 * $fontwvw;
+              font-size: 1.6 * $fontwvw;
             }
             .skill-desc > a {
-              font-size: 1.2 * $fontwvw;
-              overflow: hidden;
-              font-weight: 0;
+              font-size: 1.6 * $fontwvw;
             }
           }
         }
       }
-
       .section2 {
-        border-radius: 0;
-        width: 100%;
-        height: 100rem;
         .job-header {
-          font-size: 2.2 * $fontwvw;
-          height: 10%;
+          font-size: 2.9 * $fontwvw;
         }
         .job {
-          justify-content: space-evenly;
-          height: 90%;
-          // flex-direction: row;
           .single-job {
-            width: 50%;
-            // padding:0 2rem 1.5rem 2rem;
-            display: flex;
+            width: 70%;
             .place {
-              height: 20%;
-              font-size: 1.8 * $fontwvw;
-              padding: 1rem;
+              font-size: 2.2 * $fontwvw;
             }
             .duites {
-              height: 80%;
-              justify-content: space-evenly;
-              align-items: center;
               li {
-                font-size: 1.5 * $fontwvw;
+                font-size: 1.7 * $fontwvw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .main {
+    .cv {
+      .section1 {
+        .header {
+          .p1 {
+            font-size: 4 * $fontwvw;
+          }
+        }
+        .items {
+          .item {
+            width: 90%;
+            .p1 {
+              font-size: 2 * $fontwvw;
+            }
+            .skill-desc > a {
+              font-size: 2 * $fontwvw;
+            }
+          }
+        }
+      }
+      .section2 {
+        .job-header {
+          font-size: 4 * $fontwvw;
+        }
+        .job {
+          .single-job {
+            width: 90%;
+            .place {
+              font-size: 2.6 * $fontwvw;
+            }
+            .duites {
+              li {
+                font-size: 2.2 * $fontwvw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .main {
+    .cv {
+      .section1 {
+        .header {
+          .p1 {
+            font-size: 4.5 * $fontwvw;
+          }
+        }
+        .items {
+          .item {
+            width: 90%;
+            .p1 {
+              font-size: 3 * $fontwvw;
+            }
+            .skill-desc > a {
+              font-size: 3 * $fontwvw;
+            }
+          }
+        }
+      }
+      .section2 {
+        .job-header {
+          font-size: 4.5 * $fontwvw;
+        }
+        .job {
+          .single-job {
+            width: 90%;
+            .place {
+              font-size: 3.5 * $fontwvw;
+            }
+            .duites {
+              li {
+                font-size: 3 * $fontwvw;
               }
             }
           }

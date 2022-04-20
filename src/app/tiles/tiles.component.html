@@ -1,22 +1,26 @@
 <div class="row">
-  <div class="col-md-5 tile tile1" (click)="onTile1Click()" *ngIf="tile1switch">
-    <div class="iconHtml">
+  <div
+    class="col-md-5 tile tile1"
+    (mouseover)="onTile1Click()"
+    *ngIf="tile1switch"
+  >
+    <div class="icon iconHtml">
       <img src="../../assets/tiles/html.png" alt="html icon" />
     </div>
 
     <header>
-      <h2>Frontend</h2>
+      <h1>Frontend</h1>
       <hr />
       <h5>Html Css Sass Angular JavaScript TypeScript</h5>
     </header>
   </div>
 
   <div
-    class="col-md-5 tile tile1"
-    (click)="onTile1Click()"
+    class="col-md-5 tile tile1 tileswitch"
+    (mouseleave)="onTile1Click()"
     *ngIf="!tile1switch"
   >
-    <div class="iconHtml">
+    <div class="icon iconHtml">
       <img src="../../assets/tiles/html.png" alt="html icon" />
     </div>
     <div class="description">
@@ -31,8 +35,12 @@
 
   <!-- TILE 2 -->
 
-  <div class="col-md-7 tile tile2" (click)="onTile2Click()" *ngIf="tile2switch">
-    <div class="iconNode">
+  <div
+    class="col-md-7 tile tile2"
+    (mouseover)="onTile2Click()"
+    *ngIf="tile2switch"
+  >
+    <div class="icon iconNode">
       <img src="../../assets/tiles/node.png" alt="html icon" />
     </div>
     <header>
@@ -45,11 +53,11 @@
   <!-- Tile 2 switch -->
 
   <div
-    class="col-md-7 tile tile2"
-    (click)="onTile2Click()"
+    class="col-md-7 tile tile2 tileswitch"
+    (mouseleave)="onTile2Click()"
     *ngIf="!tile2switch"
   >
-    <div class="iconNode">
+    <div class="icon iconNode">
       <img src="../../assets/tiles/node.png" alt="html icon" />
     </div>
     <div class="description">
@@ -62,24 +70,28 @@
 <!-- ROW 2 -->
 
 <div class="row">
-  <div class="col-md-7 tile tile3" (click)="onTile3Click()" *ngIf="tile3switch">
-    <div class="iconProjects">
+  <div
+    class="col-md-7 tile tile3"
+    (mouseover)="onTile3Click()"
+    *ngIf="tile3switch"
+  >
+    <div class="icon iconProjects">
       <img src="../../assets/tiles/projects.png" alt="html icon" />
     </div>
 
     <header>
-      <h2>Projects</h2>
+      <h1>Projects</h1>
       <hr />
       <h5>There will be more of them over time :)</h5>
     </header>
   </div>
 
   <div
-    class="col-md-7 tile tile3"
-    (click)="onTile3Click()"
+    class="col-md-7 tile tile3 tileswitch"
+    (mouseleave)="onTile3Click()"
     *ngIf="!tile3switch"
   >
-    <div class="iconProjects">
+    <div class="icon iconProjects">
       <img src="../../assets/tiles/projects.png" alt="html icon" />
     </div>
     <div class="projectButton">
@@ -89,9 +101,13 @@
 
   <!-- TILE 4 -->
 
-  <div class="col-md-5 tile tile4" (click)="onTile4Click()" *ngIf="tile4switch">
-    <div class="iconGit">
-      <img src="../../assets/tiles/iconGit.png" alt="html icon" />
+  <div
+    class="col-md-5 tile tile4"
+    (mouseover)="onTile4Click()"
+    *ngIf="tile4switch"
+  >
+    <div class="icon iconGit">
+      <img src="../../assets/tiles/iconGit.png" alt="iconGit" />
     </div>
     <header>
       <h1>Source Code</h1>
@@ -103,41 +119,55 @@
   <!--  Tile 4 switch -->
 
   <div
-    class="col-md-5 tile tile4"
-    (click)="onTile4Click()"
+    class="col-md-5 tile tile4 tileswitch"
+    (mouseleave)="onTile4Click()"
     *ngIf="!tile4switch"
   >
-    <div class="iconGit">
+    <div class="icon iconGit">
       <img src="../../assets/tiles/iconGit.png" alt="html icon" />
     </div>
 
-    <div class="projectButton">
-      <a href="/" (click)="stopPropagation($event)">GitHub</a>
-      <a href="/" (click)="stopPropagation($event)">DockerHub</a>
+    <div class="projectButton gitdocker">
+      <a
+        href="https://github.com/DevTechCode"
+        target="blank"
+        (click)="stopPropagation($event)"
+        >GitHub</a
+      >
+      <a
+        href="https://hub.docker.com/u/devtechcode"
+        target="blank"
+        (click)="stopPropagation($event)"
+        >DockerHub</a
+      >
     </div>
   </div>
 </div>
 
 <!--  Row 3 -->
 <div class="row">
-  <div class="col-md-5 tile tile5" (click)="onTile5Click()" *ngIf="tile5switch">
-    <div class="iconMe">
+  <div
+    class="col-md-5 tile tile5"
+    (mouseover)="onTile5Click()"
+    *ngIf="tile5switch"
+  >
+    <div class="icon iconMe">
       <img src="../../assets/tiles/me.png" alt="html icon" />
     </div>
 
     <header>
-      <h2>About Me</h2>
+      <h1>About Me</h1>
       <hr />
       <h5>Technical skills, emploment history</h5>
     </header>
   </div>
 
   <div
-    class="col-md-5 tile tile5"
-    (click)="onTile5Click()"
+    class="col-md-5 tile tile5 tileswitch"
+    (mouseleave)="onTile5Click()"
     *ngIf="!tile5switch"
   >
-    <div class="iconMe">
+    <div class="icon iconMe">
       <img src="../../assets/tiles/me.png" alt="html icon" />
     </div>
 
@@ -149,8 +179,12 @@
 
   <!-- TILE 6 -->
 
-  <div class="col-md-7 tile tile6" (click)="onTile6Click()" *ngIf="tile6switch">
-    <div class="icon-progres">
+  <div
+    class="col-md-7 tile tile6"
+    (mouseover)="onTile6Click()"
+    *ngIf="tile6switch"
+  >
+    <div class="icon icon-progres">
       <img src="../../assets/tiles/progres.png" alt="html icon" />
     </div>
     <header>
@@ -163,11 +197,11 @@
   <!-- Tile 6 switch -->
 
   <div
-    class="col-md-7 tile tile6"
-    (click)="onTile6Click()"
+    class="col-md-7 tile tile6 tileswitch"
+    (mouseleave)="onTile6Click()"
     *ngIf="!tile6switch"
   >
-    <div class="icon-progres">
+    <div class="icon icon-progres">
       <img src="../../assets/tiles/progres.png" alt="html icon" />
     </div>
     <div class="description">

@@ -8,36 +8,41 @@ export class ProjectService {
   private Projects: Project[] = [
     new Project(
       'Shop',
-      'Krótki opis tego co sie robi w swiecie',
+      'A shop app which allows you to add and remove products, place orders and receive invoices.',
       {
         Framework: 'Express',
         Database: 'MongoDB',
         Architecture: 'MVC',
-        Deploymeny: 'Docker',
+        Deployment: 'Docker',
       },
-      'http://51.83.185.173:3000/'
+      'http://51.83.185.173:3000/',
+      'https://github.com/DevTechCode/Shop'
     ),
     new Project(
       'Drag & Drop',
-      'Piekna sprawa, dajmy tutaj jakis dluzszy opis zeby wiadomo bylo jak to wyglada na powaznie a nie tyko tak o po prostu bez sensu napisane :)',
+
+      'An employee management application. Allows you to assign available employees to projects which later can be dragged around into different stages.',
+
       {
         Language: 'TypeScript',
-        Budler: 'Webpack',
+        Bundler: 'Webpack',
         Database: 'None',
-        Deploymeny: 'Docker',
+        Deployment: 'Docker',
       },
-      'http://51.83.185.173:8080/'
+      'http://51.83.185.173:8080/',
+      'https://github.com/DevTechCode/Drag-And-Drop'
     ),
     new Project(
       'Calendar',
-      'Wiadomo',
+      'A calendar app allowing you to create your own employees database and schedule appointements with clients.',
       {
         Framework: 'udemy',
         Database: 'MongoDB',
         Architecture: 'MVC',
         Deploymeny: 'Docker',
       },
-      'http://51.83.185.173:3030/'
+      'http://51.83.185.173:3030/',
+      'https://github.com/DevTechCode/Calendar'
     ),
   ];
 
